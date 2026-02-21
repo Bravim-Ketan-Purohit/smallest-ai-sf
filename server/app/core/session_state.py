@@ -158,10 +158,18 @@ class SessionRegistry:
             if citations is not None:
                 state.citations = citations
             if risks is not None:
-                state.risks = risks
+                # Preserve previously detected risks when a subsequent model pass
+                # returns an empty set; this keeps surfaced risks stable for demo flow.
+                if risks:
+                    state.risks = risks
             if advance_cursor:
                 state.last_processed_segment_idx = snapshot_end
             state.last_llm_run_at = utc_now()
+
+    async def get_risks_snapshot(self, session_id: str) -> list[RiskJSON]:
+        state = await self.get_or_create(session_id)
+        async with state.lock:
+            return [risk.model_copy(deep=True) for risk in state.risks]
 
     async def set_llm_inflight(self, session_id: str, inflight: bool) -> None:
         state = await self.get_or_create(session_id)

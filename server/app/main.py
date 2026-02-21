@@ -136,11 +136,12 @@ async def process_session_updates(session_id: str, force_heuristic: bool = False
             )
 
         if risk_result:
+            current_risks = await session_registry.get_risks_snapshot(session_id)
             await session_registry.publish_event(
                 session_id,
                 "RISK_UPDATE",
                 {
-                    "risks": [risk.model_dump(mode="json") for risk in risk_result.risks],
+                    "risks": [risk.model_dump(mode="json") for risk in current_risks],
                     "session_id": session_id,
                 },
             )

@@ -84,8 +84,9 @@ class RiskSentinel:
         new_segments: list[SegmentJSON],
         all_segments: list[SegmentJSON],
     ) -> RiskUpdateLLMResponse:
+        _ = new_segments
         transcript_window = all_segments[-30:]
-        candidates = _transcript_driven_candidates(new_segments if new_segments else transcript_window)
+        candidates = _transcript_driven_candidates(transcript_window)
         if not candidates:
             return RiskUpdateLLMResponse(risks=[])
 
