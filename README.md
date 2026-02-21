@@ -20,8 +20,6 @@ This repo prioritizes demo reliability and observability while keeping the backe
 
 [![Watch the PulseScribe demo on YouTube](https://img.youtube.com/vi/7Z_5_qPwq7Y/maxresdefault.jpg)](https://youtu.be/7Z_5_qPwq7Y?si=GeROeyktlPx4sLDE)
 
-- Watch demo (repo file): [App Demo Video](./assets/App_demo_smallest.ai_hackathon_sf.mp4)
-- Watch demo (GitHub link): [App Demo Video (GitHub)](https://github.com/Bravim-Ketan-Purohit/smallest-ai-sf/blob/main/assets/App_demo_smallest.ai_hackathon_sf.mp4)
 - Note: GitHub README does not support true inline video embed from YouTube, but this thumbnail gives a one-click play flow.
 
 ## Why Smallest STT In This Build
