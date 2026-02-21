@@ -14,6 +14,11 @@ PulseScribe is a hackathon MVP built around a practical wedge:
 
 This repo prioritizes demo reliability and observability while keeping the backend architecture clean and scalable.
 
+## Demo Video
+
+- Watch demo (repo file): [App Demo Video](./app%20demo/App_demo_smallest.ai_hackathon_sf.mp4)
+- Watch demo (GitHub link): [App Demo Video (GitHub)](https://github.com/Bravim-Ketan-Purohit/smallest-ai-sf/blob/main/app%20demo/App_demo_smallest.ai_hackathon_sf.mp4)
+
 ## Why Smallest STT In This Build
 
 This app uses **Smallest Waves Pulse STT** for speech-to-text (STT).  
