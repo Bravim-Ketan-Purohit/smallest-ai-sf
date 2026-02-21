@@ -16,8 +16,9 @@ This repo prioritizes demo reliability and observability while keeping the backe
 
 ## Demo Video
 
-- Watch demo (repo file): [App Demo Video](./app%20demo/App_demo_smallest.ai_hackathon_sf.mp4)
-- Watch demo (GitHub link): [App Demo Video (GitHub)](https://github.com/Bravim-Ketan-Purohit/smallest-ai-sf/blob/main/app%20demo/App_demo_smallest.ai_hackathon_sf.mp4)
+- Watch demo (repo file): [App Demo Video](./assets/App_demo_smallest.ai_hackathon_sf.mp4)
+- Watch demo (GitHub link): [App Demo Video (GitHub)](https://github.com/Bravim-Ketan-Purohit/smallest-ai-sf/blob/main/assets/App_demo_smallest.ai_hackathon_sf.mp4)
+- Note: `blob` links are clickable but not true inline embeds in README. For inline playback, use a `github.com/user-attachments/assets/...` media URL.
 
 ## Why Smallest STT In This Build
 
